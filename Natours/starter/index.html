@@ -16,6 +16,45 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        class="navigation__checkbox"
+        id="navi-toggle"
+        name="navi-toggle"
+        hidden
+      />
+      <label for="navi-toggle" class="navigation__button"
+        ><span class="navigation__icon">&nbsp;</span></label
+      >
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>About Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="Logo" class="header__logo" />
@@ -265,6 +304,14 @@
       </section>
 
       <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="vide/webm" />
+            Your browser is not supported
+          </video>
+        </div>
+
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             We make people geniunely happy
@@ -279,6 +326,9 @@
                 alt="Person on a tour"
                 class="story__img"
               />
+              <figcaption class="story__caption">
+                Marry Smith
+              </figcaption>
             </figure>
             <div class="story__text">
               <h3 class="heading-tertiary u-margin-bottom-small">
@@ -293,6 +343,37 @@
               </p>
             </div>
           </div>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-9.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">
+                Jack Wilson
+              </figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                WOW! My life is completely different now
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+                omnis quia, sint iusto quis quae nam excepturi. Voluptate
+                delectus ipsa error doloremque laboriosam assumenda alias fugiat
+                vitae? Sint, atque voluptatum! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Necessitatibus esse fugit facere
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn-text">Read all stories &rarr;</a>
         </div>
       </section>
 
